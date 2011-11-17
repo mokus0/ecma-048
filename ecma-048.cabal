@@ -1,0 +1,31 @@
+name:                   ecma048
+version:                0.0.0.1
+stability:              experimental
+
+cabal-version:          >= 1.6
+build-type:             Simple
+
+author:                 James Cook <mokus@deepbondi.net>
+maintainer:             James Cook <mokus@deepbondi.net>
+license:                PublicDomain
+homepage:               https://github.com/mokus0/ecma-048
+
+category:               Codec
+synopsis:               ECMA-48 (\"ANSI\") terminal escape code parsers
+description:            ECMA-48 (\"ANSI\") terminal escape code parsers
+
+source-repository head
+  type:                 git
+  location:             https://github.com/mokus0/ecma-048.git
+
+Library
+  hs-source-dirs:       src
+  exposed-modules:      Codec.Terminal.ECMA048
+                        Codec.Terminal.ECMA048.C0
+                        Codec.Terminal.ECMA048.C1
+                        Codec.Terminal.ECMA048.ControlFunctions
+                        Codec.Terminal.ECMA048.ControlSequences
+                        Codec.Terminal.ECMA048.ICF
+  build-depends:        base >= 3,
+                        attoparsec,
+                        bytestring
