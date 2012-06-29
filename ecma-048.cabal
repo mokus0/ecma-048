@@ -26,6 +26,6 @@ Library
                         Codec.Terminal.ECMA048.ControlFunctions
                         Codec.Terminal.ECMA048.ControlSequences
                         Codec.Terminal.ECMA048.ICF
-  build-depends:        base >= 3,
+  build-depends:        base >= 3 && < 5,
                         attoparsec,
                         bytestring
